@@ -14,7 +14,6 @@ module.exports = {
 
     addImage : async (req, res, next) => {
         try{
-            console.log(req.body);
             const image = await Image.createImage(req.body);
             res.json(image);
         }
